@@ -39,7 +39,14 @@ From the VMware ESXi home screen Press F2 to go to the settings<br>
 Enter the credentials to log in<br>
 Go to Troubleshooting Options<br>
 Enable SSH
+<br>
+<br>
 ![image](https://github.com/fayas1290/ESXI-Lab/assets/157561213/ad9c0afc-1fa6-4e25-8f1c-e26ad717ce46)
+<br>
+<br>
+We then SSH into the VMware OS using an app like PuTTY<br>
+Downlaod the required firmware
+<img width="938" alt="Screenshot 2024-05-07 114106" src="https://github.com/fayas1290/ESXI-Lab/assets/157561213/8f2230da-0e94-424e-9871-091203b2e792">
 
 
 
