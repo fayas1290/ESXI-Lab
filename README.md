@@ -1,4 +1,4 @@
-# Installing VMware ESXI On An HPE Proliant Server
+# Installing VMware ESXI On An HPE Proliant Server And Installing Firmware In VMware ESXI
 
 To begin with, delete previously configured arrays from the sever on System Utilities by going into System Configuration > selecting the appropriate storage controller > Array Configuration > Manage Array > select the Array to delete > Delete Array > Submit Changes
 <br>
@@ -29,6 +29,17 @@ Once all the modules are loaded you will be prompted to select the logical disk,
 <br>
 Confirm the installation by pressing F11 on the final screen.
 Once the OS has been installed boot into the OS by rebooting the server
+
+# Installing Firmware In VMware ESXI
+We begin by placing the host in maintenance mode, instructions can be found [here](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html)
+<br>
+And then we Enable SSH so that we can connect to the OS through an app like PuTTY using SSH protocol
+<br>
+From the VMware ESXi home screen Press F2 to go to the settings<br>
+Enter the credentials to log in<br>
+Go to Troubleshooting Options<br>
+Enable SSH
+![image](https://github.com/fayas1290/ESXI-Lab/assets/157561213/ad9c0afc-1fa6-4e25-8f1c-e26ad717ce46)
 
 
 
