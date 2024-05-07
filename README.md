@@ -33,7 +33,7 @@ Once the OS has been installed boot into the OS by rebooting the server
 # Installing Firmware In VMware ESXI
 We begin by placing the host in maintenance mode, instructions can be found [here](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-8F705E83-6788-42D4-93DF-63A2B892367F.html)
 <br>
-And then we Enable SSH so that we can connect to the OS through an app like PuTTY using SSH protocol
+And then we Enable SSH and ESXi Shell so that we can connect to the OS through an app like PuTTY using SSH protocol
 <br>
 From the VMware ESXi home screen Press F2 to go to the settings<br>
 Enter the credentials to log in<br>
@@ -45,8 +45,36 @@ Enable SSH
 <br>
 <br>
 We then SSH into the VMware OS using an app like PuTTY<br>
-Downlaod the required firmware
+Login as root <br>
+Download the required firmware
 <img width="938" alt="Screenshot 2024-05-07 114106" src="https://github.com/fayas1290/ESXI-Lab/assets/157561213/8f2230da-0e94-424e-9871-091203b2e792">
+<br>
+<br>
+Note that the firmware file is in ZIP format<br>
+Place the Smart Component zip file in a temporary directory. (using FTP client like FileZilla)<br>
+We then unzip the file CPXXXXXX.zip downloaded from HPE Support Center using `unzip` command<br>
+After extraction, we need to ensure that the CPXXXXXX.vmexe file is executable by using the command
+```Shell
+chmod +x CPXXXXXX.vmexe
+```
+From the same directory, execute the Smart Component, using the following command
+```Shell
+ ./CPXXXXXX.vmexe
+```
+<br>
+
+![image](https://github.com/fayas1290/ESXI-Lab/assets/157561213/e3021072-1d38-4f97-8368-6c019722be88)
+<br>
+<br>
+Reboot the server as requested and the installiion will be complete
+
+
+
+
+
+
+
+
 
 
 
